@@ -12,11 +12,14 @@ function App() {
   const [featPupId, setFeatPupId] = useState(null)
 
   function handleClick() {
-    // some logic here
+  
   }
   const featuredPup = puppies.find((pup)=> pup.id === featPupId)
   return (
-    <div className="App"> {featPupId && (
+    
+    <div className="App"> 
+        <h1>Puppy Pal App</h1>
+        {featPupId && (
       <div>
         <h2>{featuredPup.name}</h2>
         <ul>
